@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SiteTitle -->
-    <title>SwiftCart E-Commerce</title>
+    <title>Products | SwiftCart E-Commerce</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="./" type="image/x-icon" />
@@ -18,7 +18,8 @@
       rel="stylesheet"
       type="text/css"
     />
-    <!-- TailwindCSS -->
+    
+<!-- TailwindCSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
@@ -57,8 +58,8 @@
           <ul class="menu menu-horizontal px-1">
             <li>
               <a
-                href="#"
-                class="text-primary hover:text-secondary text-base font-medium hover:bg-transparent hover:scale-110 transition-all duration-300 active-nav"
+                href="/index.html"
+                class="text-primary hover:text-secondary text-base font-medium hover:bg-transparent hover:scale-110 transition-all duration-300"
                 >Home</a
               >
             </li>
@@ -71,8 +72,8 @@
             </li>
             <li>
               <a
-                href="./product/products.html"
-                class="text-primary hover:text-secondary text-base font-medium hover:bg-transparent hover:scale-110 transition-all duration-300"
+                href="../product/products.html"
+                class="text-primary hover:text-secondary text-base font-medium hover:bg-transparent hover:scale-110 transition-all duration-300 active-nav"
                 >Products</a
               >
             </li>
@@ -122,8 +123,8 @@
             >
               <li>
                 <a
-                  href="#"
-                  class="text-primary hover:text-secondary text-base font-medium hover:bg-transparent hover:scale-110 transition-all duration-300 active-nav"
+                  href="/index.html"
+                  class="text-primary hover:text-secondary text-base font-medium hover:bg-transparent hover:scale-110 transition-all duration-300"
                   >Home</a
                 >
               </li>
@@ -136,8 +137,8 @@
               </li>
               <li>
                 <a
-                  href="./product/products.html"
-                  class="text-primary hover:text-secondary text-base font-medium hover:bg-transparent hover:scale-110 transition-all duration-300"
+                  href="../product/products.html"
+                  class="text-primary hover:text-secondary text-base font-medium hover:bg-transparent hover:scale-110 transition-all duration-300 active-nav"
                   >Products</a
                 >
               </li>
@@ -156,128 +157,30 @@
 
     <!-- Main -->
     <main>
-      <!-- BannerSection -->
-      <section id="banner" class="min-h-[90vh]">
-        <!-- Content -->
-        <div
-          class="max-w-7xl mx-auto flex items-center h-[90vh] relative z-10 px-4 lg:px-0"
-        >
-          <div>
-            <h1 class="text-5xl font-bold text-white">
-              Best Collection For You
-            </h1>
-            <p class="w-8/12 text-lg text-white/70 mt-4">
-              Discover the latest trends in men's fashion. Shop with confidence
-              and style at SwiftCart.
-            </p>
+      <!-- ProductSection -->
+      <section id="products" class="py-10 px-4 lg:px-0">
+        <div class="max-w-7xl mx-auto">
+          <!-- SectionTitle -->
+          <h2 class="text-3xl font-bold text-center text-black/95">
+            Our Products
+          </h2>
+
+          <!-- ProductCategoryLevelContainer -->
+          <div
+            id="productCategoryLevelContainer"
+            class="flex justify-center gap-5 mt-6 flex-wrap"
+          >
             <button
-              type="button"
-              onclick="shopNow()"
-              class="bg-primary hover:bg-secondary hover:scale-110 px-6 py-3 rounded mt-6 transition-all duration-300 cursor-pointer text-white"
+              id="allProductsBtn"
+              class="bg-transparent hover:bg-primary border-2 border-primary text-primary hover:text-white px-4 py-2 rounded-full text-sm font-medium cursor-pointer allProductsBtn transition-colors duration-300"
             >
-              Shop Now
+              All
             </button>
           </div>
-        </div>
-      </section>
 
-      <!-- FeatureSection -->
-      <section id="about" class="py-10 lg:py-20 bg-[#f9f9f9] px-4 lg:px-0">
-        <!-- SectionTitle -->
-        <div class="mb-20">
-          <h2 class="text-3xl font-bold text-center text-black/95">
-            Why Choose Us
-          </h2>
-          <p class="text-center text-black/70 mt-2">
-            We provide the best shopping experience with top-quality products
-            and services.
-          </p>
-        </div>
-
-        <!-- FeatureContainer -->
-        <div
-          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-6"
-        >
-          <!-- FeatureItem - 1 -->
+          <!-- ProductsContainer -->
           <div
-            class="bg-white p-6 rounded relative hover:shadow-lg transition-shadow duration-300"
-          >
-            <!-- FeatureIcon -->
-            <div
-              class="p-2 rounded-lg text-primary bg-primary/10 border-3 border-white w-12 h-12 inline-flex justify-center items-center absolute -top-6 left-6"
-            >
-              <i class="fa-solid fa-truck"></i>
-            </div>
-            <h3 class="text-black/95 text-xl font-medium mt-4">
-              Fast Delivery
-            </h3>
-            <p class="text-black/70 mt-2 text-sm">
-              Get your products delivered quickly and efficiently.
-            </p>
-          </div>
-
-          <!-- FeatureItem - 2 -->
-          <div
-            class="bg-white p-6 rounded relative hover:shadow-lg transition-shadow duration-300"
-          >
-            <!-- FeatureIcon -->
-            <div
-              class="p-2 rounded-lg text-primary bg-primary/10 border-3 border-white w-12 h-12 inline-flex justify-center items-center absolute -top-6 left-6"
-            >
-              <i class="fa-solid fa-headset"></i>
-            </div>
-            <h3 class="text-black/95 text-xl font-medium mt-4">24/7 Support</h3>
-            <p class="text-black/70 mt-2 text-sm">
-              Our support team is available around the clock to assist you.
-            </p>
-          </div>
-
-          <!-- FeatureItem - 3 -->
-          <div
-            class="bg-white p-6 rounded relative hover:shadow-lg transition-shadow duration-300"
-          >
-            <!-- FeatureIcon -->
-            <div
-              class="p-2 rounded-lg text-primary bg-primary/10 border-3 border-white w-12 h-12 inline-flex justify-center items-center absolute -top-6 left-6"
-            >
-              <i class="fa-solid fa-shield-halved"></i>
-            </div>
-            <h3 class="text-black/95 text-xl font-medium mt-4">
-              Secure Payment
-            </h3>
-            <p class="text-black/70 mt-2 text-sm">
-              Experience safe and secure transactions with our trusted payment
-              system.
-            </p>
-          </div>
-
-          <!-- FeatureItem - 4 -->
-          <div
-            class="bg-white p-6 rounded relative hover:shadow-lg transition-shadow duration-300"
-          >
-            <!-- FeatureIcon -->
-            <div
-              class="p-2 rounded-lg text-primary bg-primary/10 border-3 border-white w-12 h-12 inline-flex justify-center items-center absolute -top-6 left-6"
-            >
-              <i class="fa-solid fa-rotate-left"></i>
-            </div>
-            <h3 class="text-black/95 text-xl font-medium mt-4">Easy Returns</h3>
-            <p class="text-black/70 mt-2 text-sm">
-              Not satisfied? Return your product easily within 30 days.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ProductSection -->
-      <section id="products" class="py-10 lg:py-20 px-4 lg:px-0">
-        <div class="max-w-7xl mx-auto">
-          <h2 class="text-3xl font-bold text-center lg:text-left text-black/95">
-            Trending Now
-          </h2>
-
-          <!-- ProductContainer -->
-          <div
+            id="productsContainer"
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-15 mt-8"
           >
             <!-- ProductItem - 1 -->
@@ -418,7 +321,7 @@
           <!-- Logo -->
           <div>
             <a
-              href="#"
+              href="/index.html"
               class="hover:scale-110 transition-transform duration-300 p-0"
             >
               <span
@@ -443,8 +346,8 @@
             <ul>
               <li>
                 <a
-                  href="#"
-                  class="text-white/70 hover:text-secondary text-sm font-medium hover:bg-transparent hover:scale-110 transition-all duration-300 active-nav"
+                  href="/index.html"
+                  class="text-white/70 hover:text-secondary text-sm font-medium hover:bg-transparent hover:scale-110 transition-all duration-300"
                   >Home</a
                 >
               </li>
@@ -457,8 +360,8 @@
               </li>
               <li>
                 <a
-                  href="./product/products.html"
-                  class="text-white/70 hover:text-secondary text-sm font-medium hover:bg-transparent hover:scale-110 transition-all duration-300"
+                  href="#products"
+                  class="text-white/70 hover:text-secondary text-sm font-medium hover:bg-transparent hover:scale-110 transition-all duration-300 active-nav"
                   >Products</a
                 >
               </li>

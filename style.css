@@ -5,12 +5,14 @@
   --color-secondary: #b13bff;
 }
 
+html,
 body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 #banner {
-  background-image: url("../assets/banner-image.png");
+  background-image: url("./Assets/banner-image.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,4 +27,23 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Overlay */
+}
+
+input,
+input:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.active-nav {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.allProductsBtn.active,
+.category-btn.active {
+  background-color: var(--color-primary); /* Tailwind primary color */
+  color: white;
+  border-color: var(--color-primary);
 }
